@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+@import "../src/components/scss/variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding: $sec-padding;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background-color: #000;
+}
+
+section {
+  width: 100vw;
+  padding: $sec-padding;
+}
+
+.gradient-text {
+  background: $main-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-btn {
+  position: relative;
+  padding: 1em 0.8em;
+  font-size: 1.1rem;
+  font-weight: $bold;
+  font-family: "Raleway", sans-serif;
+  z-index: 0;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $main-gradient;
+  border-radius: 3px;
+  transition: 250ms ease-in;
+  z-index: -1;
+}
+.cta-btn:hover {
+  color: #fff;
+}
+.cta-btn:hover::before {
+  width: 8%;
+  border-radius: 3px 0 0 3px;
+}
+
+.section-heading {
+  position: relative;
+  margin: 0.7em 0;
+  color: $primary-color;
+  font-weight: $medium;
+  letter-spacing: 1px;
+  align-self: center;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: -15%;
+  height: 2px;
+  width: 130%;
+  border-radius: 50px;
+  background-color: $primary-color;
+}
+
+@import "../src/components/scss/media-queries.scss";
