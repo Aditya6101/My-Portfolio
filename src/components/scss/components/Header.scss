@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 header {
   height: 10vh;
@@ -89,5 +89,42 @@ header {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header {
+    .nav-links.active {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .nav-links {
+      display: none;
+      .nav-link {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    $sec-padding: 0 10%;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .nav-link {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
   }
 }

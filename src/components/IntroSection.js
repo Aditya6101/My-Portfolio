@@ -1,16 +1,20 @@
+import HeroImg from "../images/hero.svg";
+import "./scss/components/IntroSection.scss";
+import Button from "../components/Button";
+
 const IntroSection = () => {
   return (
-    <section class="intro-section">
-      <div class="intro-img">
-        <img src="./Images/hero-img.svg" alt="intro-img" />
+    <section className="intro-section">
+      <div className="intro-img">
+        <img src={HeroImg} alt="intro-img" />
       </div>
-      <div class="intro-text">
+      <div className="intro-text">
         <h1>
-          Hey, I'm <span class="gradient-text">Aditya</span>
+          Hey, I'm <span className="gradient-text">Aditya</span>
         </h1>
         <h3>Developer & Designer</h3>
         <p>Stay tuned to know about me.</p>
-        <button class="cta-btn">See My Work</button>
+        <Button text="See My Work" />
       </div>
     </section>
   );

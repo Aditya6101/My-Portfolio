@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
 @import "../src/components/scss/variables.scss";
 
 *,
@@ -11,10 +12,10 @@
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 section {
-  height: 100vh;
   width: 100%;
   padding: $sec-padding;
   overflow-x: hidden;
@@ -36,7 +37,7 @@ button {
 
 body {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -44,7 +45,7 @@ body {
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   padding: $sec-padding;
 }
 
@@ -101,4 +102,8 @@ section {
   background-color: $primary-color;
 }
 
-@import "../src/components/scss/media-queries.scss";
+@media screen and (min-width: 768px) {
+  section {
+    $sec-padding: 0 10%;
+  }
+}

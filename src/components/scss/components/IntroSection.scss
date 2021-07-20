@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.intro-section {
+  $section-bg: #141628;
+  background-color: $section-bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+  .intro-text {
+    align-self: flex-start;
+    flex: 2;
+    margin-bottom: 3em;
+    h1 {
+      margin-bottom: 0.2em;
+      font-size: 4rem;
+      font-weight: $bold;
+      line-height: 1.4;
+      color: #fff;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: $bold;
+      color: #fff;
+    }
+    p {
+      margin: 1.2em 0 2em;
+      font-size: 0.875rem;
+      font-weight: $regular;
+      color: #bdbdbd;
+    }
+  }
+  .intro-img {
+    flex: 1;
+    max-width: 40%;
+    min-width: 400px;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .intro-section {
+    height: 90vh;
+    flex-direction: row;
+    .intro-text {
+      align-self: center;
+      order: 1;
+      margin-bottom: 0;
+      h1 {
+        font-size: 4.5rem;
+      }
+      h3 {
+        font-size: 2.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .intro-img {
+      order: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .intro-section {
+    height: 60vh;
+    .intro-text {
+      flex: 0;
+      margin-bottom: 0;
+    }
+    .intro-img {
+      display: none;
+    }
+  }
+}

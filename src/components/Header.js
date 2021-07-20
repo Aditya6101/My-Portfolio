@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logo.svg";
-import "./scss/Header.scss";
+import "./scss/components/Header.scss";
 const Header = () => {
   // Adding event listener to burger-menu
   function navChange() {
