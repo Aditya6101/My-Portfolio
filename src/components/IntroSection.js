@@ -1,5 +1,5 @@
 import HeroImg from "../images/hero.svg";
-import "./scss/components/IntroSection.scss";
+import "./scss/IntroSection.scss";
 import Button from "../components/Button";
 
 const IntroSection = () => {
@@ -14,7 +14,7 @@ const IntroSection = () => {
         </h1>
         <h3>Developer & Designer</h3>
         <p>Stay tuned to know about me.</p>
-        <Button text="See My Work" />
+        <Button text="See My Work" href="#project-section" />
       </div>
     </section>
   );

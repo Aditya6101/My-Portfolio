@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
-@import "../src/components/scss/variables.scss";
+@import "../src/components/scss/Variables.scss";
 
 *,
 *::before,
@@ -55,55 +55,34 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.cta-btn {
-  position: relative;
-  padding: 1em 0.8em;
-  font-size: 1.1rem;
-  font-weight: $bold;
-  font-family: "Raleway", sans-serif;
-  z-index: 0;
-}
-.cta-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: $main-gradient;
-  border-radius: 3px;
-  transition: 250ms ease-in;
-  z-index: -1;
-}
-.cta-btn:hover {
-  color: #fff;
-}
-.cta-btn:hover::before {
-  width: 8%;
-  border-radius: 3px 0 0 3px;
-}
-
 .section-heading {
   position: relative;
   margin: 0.7em 0;
   color: $primary-color;
+  font-size: 1rem;
   font-weight: $medium;
   letter-spacing: 1px;
   align-self: center;
-}
-.section-heading::after {
-  content: "";
-  position: absolute;
-  top: 110%;
-  left: -15%;
-  height: 2px;
-  width: 130%;
-  border-radius: 50px;
-  background-color: $primary-color;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: -15%;
+    height: 2px;
+    width: 130%;
+    border-radius: 50px;
+    background-color: $primary-color;
+  }
 }
 
 @media screen and (min-width: 768px) {
   section {
     $sec-padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section-heading {
+    font-size: 0.875rem;
   }
 }

@@ -1,18 +1,19 @@
-import React from "react";
 import PropTypes from "prop-types";
-
-function Button({ text, fasIcon: icon }) {
+import "./scss/Button.scss";
+function Button({ text, icon, href, target }) {
   return (
     <button className="cta-btn">
-      {text}
-      {icon ? <i className={`fas ${icon}`}></i> : null}
+      <a href={href} target={target}>
+        {text}
+        {icon ? <i className={icon}></i> : null}
+      </a>
     </button>
   );
 }
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  fasIcon: PropTypes.string,
+  icon: PropTypes.string,
 };
 
 export default Button;

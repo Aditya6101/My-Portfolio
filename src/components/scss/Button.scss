@@ -1,0 +1,38 @@
+@import "./Variables.scss";
+
+.cta-btn {
+  position: relative;
+  padding: 1em 0.8em;
+  background: $main-gradient;
+  font-family: inherit;
+
+  z-index: 0;
+  a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: $bold;
+    border-radius: 3px;
+    transition: color 300ms ease-in;
+  }
+  i {
+    margin-left: 0.3em;
+  }
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid $secondary-color;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.cta-btn:hover {
+  background: transparent;
+  a {
+    color: #fff;
+  }
+}

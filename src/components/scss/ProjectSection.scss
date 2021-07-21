@@ -1,0 +1,46 @@
+@import "./Variables.scss";
+
+.project-section {
+  $section-bg: #1b1e32;
+  padding-top: 1em;
+  background-color: $section-bg;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  .project-navigation {
+    margin: 1em 0;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .navigation-btn {
+      padding: 0.7em;
+      font-size: 1.3rem;
+      color: $primary-color;
+      background-color: #262a43;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .navigation-text {
+      margin: 0 1em;
+      font-size: 1.3rem;
+      font-weight: $medium;
+      color: #fff;
+      border-radius: 3px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-section {
+    .project-navigation {
+      align-self: center;
+    }
+  }
+}
