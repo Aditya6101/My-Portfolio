@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const Project = ({ isActive, img, title, stack, desc, code, site }) => {
   return (
-    <div className="project project-1" id={isActive ? "active" : ""}>
+    <div className="project" id={isActive ? "active" : ""}>
       <div className="project-mockup">
         <img src={img} alt={title} />
       </div>

@@ -5,13 +5,12 @@
   padding: 1em 0.8em;
   background: $main-gradient;
   font-family: inherit;
-
+  border-radius: 3px;
   z-index: 0;
   a {
     color: #000;
     font-size: 1.1rem;
     font-weight: $bold;
-    border-radius: 3px;
     transition: color 300ms ease-in;
   }
   i {
