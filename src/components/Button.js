@@ -3,7 +3,11 @@ import "./scss/Button.scss";
 function Button({ text, icon, href, target }) {
   return (
     <button className="cta-btn">
-      <a href={href} target={target}>
+      <a
+        href={href}
+        target={target}
+        rel={target === "_blank" ? "noreferrer" : null}
+      >
         {text}
         {icon ? <i className={icon}></i> : null}
       </a>

@@ -42,8 +42,8 @@ header {
       background-color: $primary-color;
       transition: transform 250ms ease-in;
     }
-    &:hover::after {
-      content: "";
+    &:hover::after,
+    &:focus::after {
       transform: scale(1);
     }
     a {

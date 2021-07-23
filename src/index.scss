@@ -44,11 +44,6 @@ body {
   background-color: #000;
 }
 
-section {
-  width: 100%;
-  padding: $sec-padding;
-}
-
 .gradient-text {
   background: $main-gradient;
   -webkit-background-clip: text;
@@ -57,7 +52,7 @@ section {
 
 .section-heading {
   position: relative;
-  margin: 0.7em 0;
+  margin: 1.5em 0;
   color: $primary-color;
   font-size: 1rem;
   font-weight: $medium;
