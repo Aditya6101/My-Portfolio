@@ -15,7 +15,8 @@ img {
   object-fit: cover;
 }
 
-section {
+section,
+footer {
   width: 100%;
   padding: $sec-padding;
   overflow-x: hidden;
@@ -41,7 +42,6 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  background-color: #000;
 }
 
 .gradient-text {
@@ -71,7 +71,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  section {
+  section,
+  footer {
     $sec-padding: 0 10%;
   }
 }

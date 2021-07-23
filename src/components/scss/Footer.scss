@@ -1,0 +1,66 @@
+@import "./Variables.scss";
+
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  .col {
+    display: flex;
+    align-items: center;
+    h3 {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: $regular;
+      i {
+        margin-right: 0.3em;
+      }
+    }
+    &:last-of-type {
+      i {
+        font-size: 2rem;
+        margin: 0 0.5em;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .col {
+      h3 {
+        font-size: 1.1rem;
+        i {
+          margin-right: 0.5em;
+        }
+      }
+      &:last-of-type {
+        i {
+          font-size: 2.1rem;
+          margin: 0 1em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    .col {
+      &:last-of-type {
+        i {
+          margin: 0.5em 1em 0 0;
+        }
+      }
+    }
+  }
+}

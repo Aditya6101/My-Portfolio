@@ -3,6 +3,7 @@ import IntroSection from "./components/IntroSection";
 import ProjectSection from "./components/ProjectSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <ProjectSection />
       <AboutSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }
