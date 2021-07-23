@@ -38,9 +38,9 @@ const Header = () => {
   }
   return (
     <header>
-      <div className="logo">
+      <a href="/" className="logo">
         <img src={logo} alt="logo" />
-      </div>
+      </a>
       <nav>
         <div className="burger-menu" onClick={navChange}>
           <div className="line1"></div>
