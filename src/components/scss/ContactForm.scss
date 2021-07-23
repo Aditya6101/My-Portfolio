@@ -1,0 +1,75 @@
+@import "./Variables.scss";
+
+.contact-form {
+  width: 80%;
+  form {
+    width: 100%;
+    .form-control {
+      margin: 1.5em 0;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 0.8rem;
+        font-weight: $medium;
+        color: #fff;
+      }
+      input,
+      textarea {
+        width: 100%;
+        margin: 0.5em 0;
+        padding: 0.3em 0.7em;
+        font-size: 1rem;
+        font-weight: $medium;
+        font-family: inherit;
+        color: #fff;
+        background-color: #141628;
+        border: none;
+        border-radius: 3px;
+        &:focus {
+          outline: 1px solid $primary-color;
+        }
+        &:invalid {
+          outline: 1px solid red;
+        }
+      }
+    }
+    .submit-btn {
+      padding: 0.6em 1em;
+      background: $main-gradient;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: $bold;
+      border-radius: 3px;
+      border: 2px solid $primary-color;
+      transition: all 250ms ease-in;
+      &:hover {
+        color: white;
+        background: none;
+        border-color: $secondary-color;
+      }
+      i {
+        margin: 0 0.1em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    flex: 1;
+    form {
+      .form-control {
+        label {
+          font-size: 1rem;
+        }
+        input,
+        textarea {
+          font-size: 1rem;
+        }
+      }
+      .submit-btn {
+        font-size: 1rem;
+      }
+    }
+  }
+}
