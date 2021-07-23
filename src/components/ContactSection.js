@@ -2,7 +2,7 @@ import "./scss/ContactSection.scss";
 import ContactFrom from "./ContactForm";
 const ContactSection = () => {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <h3 className="section-heading">Contact</h3>
       <div className="container">
         <div className="text-content">

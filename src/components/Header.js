@@ -2,20 +2,35 @@ import React from "react";
 import logo from "../images/logo.svg";
 import "./scss/Header.scss";
 const Header = () => {
-  // Adding event listener to burger-menu
+  // Function to make change Nav
   function navChange() {
     const burgerMenu = document.querySelector(".burger-menu");
-    const navLinks = document.querySelector(".nav-links");
-    const navLink = document.querySelectorAll(".nav-link");
-
-    navLinks.classList.toggle("active");
     burgerMenu.classList.toggle("toggle");
 
-    navLink.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
+    animateNavBar();
+    animateNavLinks();
+  }
+
+  // Function to make Nav faed-in
+  function animateNavBar() {
+    const navBar = document.querySelector(".nav-links");
+    navBar.classList.toggle("active");
+
+    if (navBar.style.animation) {
+      navBar.style.animation = "";
+    } else {
+      navBar.style.animation = `fade-navbar 500ms ease-in`;
+    }
+  }
+
+  // Function to make Nav-Links faed-in
+  function animateNavLinks() {
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((navLink, index) => {
+      if (navLink.style.animation) {
+        navLink.style.animation = "";
       } else {
-        link.style.animation = `nav-link-fade 500ms ease forwards ${
+        navLink.style.animation = `nav-link-fade 500ms ease forwards ${
           index / 7 + 0.5
         }s`;
       }
@@ -34,13 +49,13 @@ const Header = () => {
         </div>
         <ul className="nav-links">
           <li className="nav-link">
-            <a href="goggle.com">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="nav-link">
-            <a href="goggle.com">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="nav-link">
-            <a href="goggle.com">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
