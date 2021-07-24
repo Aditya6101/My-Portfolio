@@ -17,7 +17,7 @@ const ProjectSection = () => {
       stack: "React, SCSS, API",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
       code: "https://github.com/Aditya6101/FEM-Rest-Countries-Api-Using-React",
-      site: "adityarestcountries.netlify.app/",
+      site: "https://adityarestcountries.netlify.app/",
     },
     {
       img: img2,
@@ -25,7 +25,7 @@ const ProjectSection = () => {
       stack: "Javascript, Mapbox, LeafletJS",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
       code: "https://github.com/Aditya6101/Fem--IP-Address-Tracker",
-      site: "adityaipaddresstracker.netlify.app/",
+      site: "https://adityaipaddresstracker.netlify.app/",
     },
     {
       img: img3,
@@ -33,7 +33,7 @@ const ProjectSection = () => {
       stack: "Javascript, API",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
       code: "https://github.com/Aditya6101/FEM--URL-Shortening-API",
-      site: "adityaurlshortner.netlify.app/",
+      site: "https://adityaurlshortner.netlify.app/",
     },
     {
       img: img4,
@@ -41,7 +41,7 @@ const ProjectSection = () => {
       stack: "HTML, SCSS, Javascript",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
       code: "https://github.com/Aditya6101/FEM--Easy-Bank-Landing-Page",
-      site: "adityakambleeasybank.netlify.app/",
+      site: "https://adityakambleeasybank.netlify.app/",
     },
   ];
 

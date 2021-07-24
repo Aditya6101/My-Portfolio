@@ -1,6 +1,6 @@
 import HeroImg from "../images/hero.svg";
 import "./scss/IntroSection.scss";
-import Button from "../components/Button";
+import Button from "./Button";
 
 const IntroSection = () => {
   return (
@@ -14,7 +14,17 @@ const IntroSection = () => {
         </h1>
         <h3>Developer & Designer</h3>
         <p>Stay tuned to know about me.</p>
-        <Button text="See My Work" href="#project-section" />
+        <Button
+          text="See My Work"
+          href="#project-section"
+          target="_self"
+          rel="noopener noreferrer"
+        />
+        {/* <button className="cta-btn">
+          <a href="#project-section" target="_self" rel="noopener noreferrer">
+            See My Work
+          </a>
+        </button> */}
       </div>
     </section>
   );

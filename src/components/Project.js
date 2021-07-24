@@ -20,12 +20,14 @@ const Project = ({ isActive, img, title, stack, desc, code, site }) => {
             icon="fas fa-external-link-alt"
             href={site}
             target="_blank"
+            rel="noopener noreferrer"
           />
           <Button
             text="Code"
             icon="fab fa-github"
             href={code}
             target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
       </div>

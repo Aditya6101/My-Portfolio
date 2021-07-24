@@ -1,17 +1,16 @@
 import PropTypes from "prop-types";
 import "./scss/Button.scss";
-function Button({ text, icon, href, target }) {
+function Button({ text, icon, href, target, rel }) {
   return (
-    <button className="cta-btn">
-      <a
-        href={href}
-        target={target}
-        rel={target === "_blank" ? "noreferrer" : null}
-      >
-        {text}
-        {icon ? <i className={icon}></i> : null}
-      </a>
-    </button>
+    <a
+      className="cta-btn"
+      href={href}
+      target={target ? target : null}
+      rel={rel ? rel : null}
+    >
+      {text}
+      {icon ? <i className={icon}></i> : null}
+    </a>
   );
 }
 
