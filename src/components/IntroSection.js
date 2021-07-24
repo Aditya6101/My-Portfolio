@@ -20,11 +20,6 @@ const IntroSection = () => {
           target="_self"
           rel="noopener noreferrer"
         />
-        {/* <button className="cta-btn">
-          <a href="#project-section" target="_self" rel="noopener noreferrer">
-            See My Work
-          </a>
-        </button> */}
       </div>
     </section>
   );
