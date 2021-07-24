@@ -6,6 +6,7 @@ import img1 from "../images/where-in-the-world.png";
 import img2 from "../images/ip-address-tracker.png";
 import img3 from "../images/url-shortener.png";
 import img4 from "../images/easy-bank-landing-page.png";
+import img5 from "../images/chat-app-css-illustration.png";
 
 const ProjectSection = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -15,7 +16,7 @@ const ProjectSection = () => {
       img: img1,
       title: "Where in the World",
       stack: "React, SCSS, API",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
+      desc: "This my solution for the is a coding challenge from frontendmentor.io. I decided to go with React. This is my first react-app which I built on my own.",
       code: "https://github.com/Aditya6101/FEM-Rest-Countries-Api-Using-React",
       site: "https://adityarestcountries.netlify.app/",
     },
@@ -23,7 +24,7 @@ const ProjectSection = () => {
       img: img2,
       title: "IP Address Tracker",
       stack: "Javascript, Mapbox, LeafletJS",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
+      desc: "This challenge was pretty complicated in terms of logic for me. I used Leaflet JS along with Mapbox to display the map. It's wen with plain JS to built this.",
       code: "https://github.com/Aditya6101/Fem--IP-Address-Tracker",
       site: "https://adityaipaddresstracker.netlify.app/",
     },
@@ -31,7 +32,7 @@ const ProjectSection = () => {
       img: img3,
       title: "URL Shortener",
       stack: "Javascript, API",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
+      desc: "This was pretty state forward challenge from frontendmentor. I built this using Vanilla JS. I used SCSS for styling and went with mobile first approach.",
       code: "https://github.com/Aditya6101/FEM--URL-Shortening-API",
       site: "https://adityaurlshortner.netlify.app/",
     },
@@ -39,9 +40,17 @@ const ProjectSection = () => {
       img: img4,
       title: "Easy Bank Landing Page",
       stack: "HTML, SCSS, Javascript",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium assumenda numquam nam dolor ad modi exercitationem provident. Velit beatae iste neque nulla adipisci!",
+      desc: "This was my first frontendmentor chllenge. It was bit complex in terms of design so, it took more time than expected. But finally I made it.",
       code: "https://github.com/Aditya6101/FEM--Easy-Bank-Landing-Page",
       site: "https://adityakambleeasybank.netlify.app/",
+    },
+    {
+      img: img5,
+      title: "Chat app CSS Illustration",
+      stack: "HTML, CSS",
+      desc: "In this frontendmentor challenge, I've built out the entire app illustration from scratch. This seriously tested my CSS skills.",
+      code: "https://github.com/Aditya6101/FEM--Chat-App-CSS-Illustration",
+      site: "https://aditya6101.github.io/FEM--Chat-App-CSS-Illustration/",
     },
   ];
 
