@@ -1,12 +1,21 @@
-// import React from 'react'
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "./scss/Project.scss";
 import Button from "./Button";
 
-// import img1 from "../images/ip-address-tracker.png";
-
 const Project = ({ isActive, img, title, stack, desc, code, site }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    gsap.from(ref.current, {
+      autoAlpha: 0,
+      ease: "none",
+      delay: 0.5,
+    });
+  }, [isActive]);
+
   return (
-    <div className="project" id={isActive ? "active" : ""}>
+    <div className="project" id={isActive ? "active" : ""} ref={ref}>
       <div className="project-mockup">
         <img src={img} alt={title} />
       </div>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import "./scss/ProjectSection.scss";
 import Project from "./Project";
 import img1 from "../images/where-in-the-world.png";
