@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./scss/ProjectSection.scss";
 import Project from "./Project";
-import img1 from "../images/where-in-the-world.png";
-import img2 from "../images/ip-address-tracker.png";
-import img3 from "../images/url-shortener.png";
-import img4 from "../images/easy-bank-landing-page.png";
-import img5 from "../images/chat-app-css-illustration.png";
+import img1 from "../images/netflix-clone.png";
+import img2 from "../images/where-in-the-world.png";
+import img3 from "../images/ip-address-tracker.png";
+import img4 from "../images/url-shortener.png";
+import img5 from "../images/easy-bank-landing-page.png";
+import img6 from "../images/chat-app-css-illustration.png";
 
 const ProjectSection = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -13,14 +14,22 @@ const ProjectSection = () => {
   const projects = [
     {
       img: img1,
+      title: "Netflix Clone",
+      stack: "React, CSS, Axios, Firebase",
+      desc: "This is a Netflix Clone created in React with the help of Axios to fetch the movies data from API. Users can explore various genres of the movie & can see the teaser/trailer of them.",
+      code: "https://github.com/Aditya6101/Netflix-Clone",
+      site: "https://netflix-clone-d1f9b.web.app/",
+    },
+    {
+      img: img2,
       title: "Where in the World",
       stack: "React, SCSS, API",
-      desc: "This my solution for the is a coding challenge from frontendmentor.io. I decided to go with React. This is my first react-app which I built on my own.",
+      desc: "This my solution for the is coding challenge from frontendmentor.io. I decided to go with React. This is my first react-app which I built on my own.",
       code: "https://github.com/Aditya6101/FEM-Rest-Countries-Api-Using-React",
       site: "https://adityarestcountries.netlify.app/",
     },
     {
-      img: img2,
+      img: img3,
       title: "IP Address Tracker",
       stack: "Javascript, Mapbox, LeafletJS",
       desc: "This challenge was pretty complicated in terms of logic for me. I used Leaflet JS along with Mapbox to display the map. It's wen with plain JS to built this.",
@@ -28,23 +37,23 @@ const ProjectSection = () => {
       site: "https://adityaipaddresstracker.netlify.app/",
     },
     {
-      img: img3,
+      img: img4,
       title: "URL Shortener",
       stack: "Javascript, API",
-      desc: "This was pretty state forward challenge from frontendmentor. I built this using Vanilla JS. I used SCSS for styling and went with mobile first approach.",
+      desc: "This was a pretty state-forward challenge from frontendmentor. I built this using Vanilla JS. I used SCSS for styling and went with a mobile-first approach.",
       code: "https://github.com/Aditya6101/FEM--URL-Shortening-API",
       site: "https://adityaurlshortner.netlify.app/",
     },
     {
-      img: img4,
+      img: img5,
       title: "Easy Bank Landing Page",
       stack: "HTML, SCSS, Javascript",
-      desc: "This was my first frontendmentor chllenge. It was bit complex in terms of design so, it took more time than expected. But finally I made it.",
+      desc: "This was my first frontendmentor challenge. It was a bit complex in terms of design so, it took more time than expected. But finally, I made it.",
       code: "https://github.com/Aditya6101/FEM--Easy-Bank-Landing-Page",
       site: "https://adityakambleeasybank.netlify.app/",
     },
     {
-      img: img5,
+      img: img6,
       title: "Chat app CSS Illustration",
       stack: "HTML, CSS",
       desc: "In this frontendmentor challenge, I've built out the entire app illustration from scratch. This seriously tested my CSS skills.",
