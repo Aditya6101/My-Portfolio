@@ -13,10 +13,10 @@ const AboutSection = () => {
           <div className="wrapper">
             <h3>Who am I</h3>
             <p>
-              I am Aditya Kamble, 19 years old Frontend Developer, Designer & CS
+              I am Aditya Kamble, 20 years old Frontend Developer, Designer & CS
               student based in India. I love to design and develop websites.
               Coding for the last two years, with emphasis on Web Dev. Worked
-              with different languages and Frameworks{" "}
+              with different languages and Frameworks.
             </p>
           </div>
           <div className="wrapper">
