@@ -25,7 +25,7 @@ const AboutSection = () => {
               <h5>Languages & Frameworks :</h5>
               <p>
                 React, Angular, Javascript, Typescript, Scss, Tailwindcss,
-                Bootstrap.
+                Bootstrap, Nodejs, Express.
               </p>
             </div>
             <div className="sub-wrapper">
