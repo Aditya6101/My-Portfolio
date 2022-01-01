@@ -1,4 +1,4 @@
-import "./scss/Footer.scss";
+import './scss/Footer.scss';
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="col">
         <h3>
           <i className="fas fa-copyright gradient-text"></i>Aditya S. Kamble
-          2021
+          2022
         </h3>
       </div>
       <div className="col">
