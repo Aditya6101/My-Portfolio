@@ -1,7 +1,7 @@
 
 # Portfolio Website
 
-A Portfolio Website created in React with some ❤. 
+A Portfolio Website created using React with some ❤. 
 
 Link: https://adityarestcountries.netlify.app
 
