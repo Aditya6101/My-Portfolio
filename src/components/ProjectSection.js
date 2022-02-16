@@ -7,6 +7,7 @@ import img3 from "../images/ip-address-tracker.png";
 import img4 from "../images/url-shortener.png";
 import img5 from "../images/easy-bank-landing-page.png";
 import img6 from "../images/chat-app-css-illustration.png";
+import img7 from "../images/node-cli-quiz.png";
 
 const ProjectSection = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -59,6 +60,14 @@ const ProjectSection = () => {
       desc: "A simple and responsive illustration made using only CSS. It is an example of what CSS can do.",
       code: "https://github.com/Aditya6101/FEM--Chat-App-CSS-Illustration",
       site: "https://aditya6101.github.io/FEM--Chat-App-CSS-Illustration/",
+    },
+    {
+      img: img7,
+      title: "Node CLI Quiz",
+      stack: "Nodejs, Inquirer",
+      desc: "A Simple Quiz CLI game created using Nodejs. User can start the quiz and can answer the questions right from there terminal. Just hit 'npx node-quiz' to start the game.",
+      code: "https://github.com/Aditya6101/node-cli-quiz",
+      site: "https://www.npmjs.com/package/node-quiz",
     },
   ];
 
