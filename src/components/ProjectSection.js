@@ -1,13 +1,14 @@
-import { useState } from "react";
-import "./scss/ProjectSection.scss";
-import Project from "./Project";
-import img1 from "../images/netflix-clone.png";
-import img2 from "../images/where-in-the-world.png";
-import img3 from "../images/ip-address-tracker.png";
-import img4 from "../images/url-shortener.png";
-import img5 from "../images/easy-bank-landing-page.png";
-import img6 from "../images/chat-app-css-illustration.png";
-import img7 from "../images/node-cli-quiz.png";
+import { useState } from 'react';
+import './scss/ProjectSection.scss';
+import Project from './Project';
+import img1 from '../images/mern-notes-app.png';
+import img2 from '../images/netflix-clone.png';
+import img3 from '../images/where-in-the-world.png';
+import img4 from '../images/ip-address-tracker.png';
+import img5 from '../images/url-shortener.png';
+import img6 from '../images/easy-bank-landing-page.png';
+import img7 from '../images/chat-app-css-illustration.png';
+import img8 from '../images/node-cli-quiz.png';
 
 const ProjectSection = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -15,59 +16,67 @@ const ProjectSection = () => {
   const projects = [
     {
       img: img1,
-      title: "Netflix Clone",
-      stack: "React, CSS, Axios, Firebase",
-      desc: "This is a Netflix Clone created in React with the help of Axios to fetch the movies data from API. Users can explore various genres of the movies & can see the teaser/trailer of them.",
-      code: "https://github.com/Aditya6101/Netflix-Clone",
-      site: "https://netflix-clone-d1f9b.web.app/",
+      title: 'Notes App',
+      stack: 'MERN Stack,Redux toolkot, Typescript, Tailwindcss',
+      desc: 'A simple note app using MERN stack. User can login and create notes. This app minimalistic and simple UI.',
+      code: 'https://github.com/Aditya6101/MERN-Notes-App',
+      site: 'https://aditya-mern-notes-app.herokuapp.com',
     },
     {
       img: img2,
-      title: "Where in the World",
-      stack: "React, SCSS, API",
-      desc: "This web app is created in react. Users can see the various information about each country such as its name, capital city, population, etc. ",
-      code: "https://github.com/Aditya6101/FEM-Rest-Countries-Api-Using-React",
-      site: "https://adityarestcountries.netlify.app/",
+      title: 'Netflix Clone',
+      stack: 'React, CSS, Axios, Firebase',
+      desc: 'This is a Netflix Clone created in React with the help of Axios to fetch the movies data from API. Users can explore various genres of the movies & can see the teaser/trailer of them.',
+      code: 'https://github.com/Aditya6101/Netflix-Clone',
+      site: 'https://netflix-clone-d1f9b.web.app/',
     },
     {
       img: img3,
-      title: "IP Address Tracker",
-      stack: "Javascript, Mapbox, LeafletJS",
-      desc: "This is project is purely built in Javascript. I used Leaflet JS along with Mapbox to display the map. Users can search with an IP Address or a domain name to get information such as location, timezone, etc.",
-      code: "https://github.com/Aditya6101/Fem--IP-Address-Tracker",
-      site: "https://adityaipaddresstracker.netlify.app/",
+      title: 'Where in the World',
+      stack: 'React, SCSS, API',
+      desc: 'This web app is created in react. Users can see the various information about each country such as its name, capital city, population, etc. ',
+      code: 'https://github.com/Aditya6101/FEM-Rest-Countries-Api-Using-React',
+      site: 'https://adityarestcountries.netlify.app/',
     },
     {
       img: img4,
-      title: "URL Shortener",
-      stack: "Javascript, API",
-      desc: "I built this using pure javascript and SCSS for styling. Users can simply paste the URL and gets its shortened version.",
-      code: "https://github.com/Aditya6101/FEM--URL-Shortening-API",
-      site: "https://adityaurlshortner.netlify.app/",
+      title: 'IP Address Tracker',
+      stack: 'Javascript, Mapbox, LeafletJS',
+      desc: 'This is project is purely built in Javascript. I used Leaflet JS along with Mapbox to display the map. Users can search with an IP Address or a domain name to get information such as location, timezone, etc.',
+      code: 'https://github.com/Aditya6101/Fem--IP-Address-Tracker',
+      site: 'https://adityaipaddresstracker.netlify.app/',
     },
     {
       img: img5,
-      title: "Easy Bank Landing Page",
-      stack: "HTML, SCSS, Javascript",
-      desc: "Simple yet beautiful landing page built using HTML, SCSS, and Javascript.It is also mobile-friendly and responsive in terms of design.",
-      code: "https://github.com/Aditya6101/FEM--Easy-Bank-Landing-Page",
-      site: "https://adityakambleeasybank.netlify.app/",
+      title: 'URL Shortener',
+      stack: 'Javascript, API',
+      desc: 'I built this using pure javascript and SCSS for styling. Users can simply paste the URL and gets its shortened version.',
+      code: 'https://github.com/Aditya6101/FEM--URL-Shortening-API',
+      site: 'https://adityaurlshortner.netlify.app/',
     },
     {
       img: img6,
-      title: "Chat app CSS Illustration",
-      stack: "HTML, CSS",
-      desc: "A simple and responsive illustration made using only CSS. It is an example of what CSS can do.",
-      code: "https://github.com/Aditya6101/FEM--Chat-App-CSS-Illustration",
-      site: "https://aditya6101.github.io/FEM--Chat-App-CSS-Illustration/",
+      title: 'Easy Bank Landing Page',
+      stack: 'HTML, SCSS, Javascript',
+      desc: 'Simple yet beautiful landing page built using HTML, SCSS, and Javascript.It is also mobile-friendly and responsive in terms of design.',
+      code: 'https://github.com/Aditya6101/FEM--Easy-Bank-Landing-Page',
+      site: 'https://adityakambleeasybank.netlify.app/',
     },
     {
       img: img7,
-      title: "Node CLI Quiz",
-      stack: "Nodejs, Inquirer",
+      title: 'Chat app CSS Illustration',
+      stack: 'HTML, CSS',
+      desc: 'A simple and responsive illustration made using only CSS. It is an example of what CSS can do.',
+      code: 'https://github.com/Aditya6101/FEM--Chat-App-CSS-Illustration',
+      site: 'https://aditya6101.github.io/FEM--Chat-App-CSS-Illustration/',
+    },
+    {
+      img: img8,
+      title: 'Node CLI Quiz',
+      stack: 'Nodejs, Inquirer',
       desc: "A Simple Quiz CLI game created using Nodejs. User can start the quiz and can answer the questions right from there terminal. Just hit 'npx node-quiz' to start the game.",
-      code: "https://github.com/Aditya6101/node-cli-quiz",
-      site: "https://www.npmjs.com/package/node-quiz",
+      code: 'https://github.com/Aditya6101/node-cli-quiz',
+      site: 'https://www.npmjs.com/package/node-quiz',
     },
   ];
 
