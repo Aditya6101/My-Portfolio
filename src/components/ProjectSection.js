@@ -18,7 +18,7 @@ const ProjectSection = () => {
       img: img1,
       title: 'Notes App',
       stack: 'MERN Stack,Redux toolkot, Typescript, Tailwindcss',
-      desc: 'A simple note app using MERN stack. User can login and create notes. This app minimalistic and simple UI.',
+      desc: 'A simple note app using MERN stack. Users can log in and create notes. This app has simple and pleasant UI.',
       code: 'https://github.com/Aditya6101/MERN-Notes-App',
       site: 'https://aditya-mern-notes-app.herokuapp.com',
     },
