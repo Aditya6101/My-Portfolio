@@ -107,7 +107,7 @@ const ProjectSection = () => {
         {projects.map((project, index) => (
           <Project
             key={index}
-            isActive={index === activeProject ? true : false}
+            isActive={index === activeProject}
             img={project.img}
             title={project.title}
             stack={project.stack}
