@@ -24,8 +24,8 @@ const AboutSection = () => {
             <div className="sub-wrapper">
               <h5>Languages & Frameworks :</h5>
               <p>
-                React, Svelte/SvelteKit, Angular, Javascript, Typescript, Scss,
-                Tailwindcss, Bootstrap, Nodejs, Express.
+                React, Nextjs, Svelte/SvelteKit, Angular, Javascript,
+                Typescript, Scss, Tailwindcss, Bootstrap, Nodejs, Express.
               </p>
             </div>
             <div className="sub-wrapper">
