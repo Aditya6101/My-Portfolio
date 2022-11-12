@@ -3,7 +3,7 @@
 
 A Portfolio Website created using React with some ❤. 
 
-Link: https://adityarestcountries.netlify.app
+Link: https://adityakamble.netlify.app/
 
 ## Tech Stack
 
